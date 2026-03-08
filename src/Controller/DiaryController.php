@@ -26,6 +26,7 @@ class DiaryController extends AbstractController
     #[IsGranted('ROLE_USER')]
     public function indexAction(): Response
     {
+        $test = 1;
         return $this->render(
             'diary/index.html.twig',
             [
